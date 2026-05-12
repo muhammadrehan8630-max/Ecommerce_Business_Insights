@@ -1,9 +1,11 @@
-# Ecommerce Sales Dashboard
+## Ecommerce Sales Analytics
+
 
 ## Project Overview
-This project analyzes ecommerce sales data using SQL and Power BI to identify revenue trends, customer behavior, top-performing product categories, and payment patterns.
 
-The dashboard provides business insights for sales performance tracking and decision-making.
+This SQL + Power BI project analyzes ecommerce sales data to identify revenue trends, customer behavior, payment patterns, and top-performing product categories.
+
+The project provides business insights for sales performance tracking and data-driven decision-making.
 
 ---
 
