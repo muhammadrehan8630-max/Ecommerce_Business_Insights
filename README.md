@@ -6,7 +6,7 @@ Analyzed 99K+ e-commerce orders from the Olist Brazilian marketplace using SQL a
 
 ## 🛠 Tools Used
 
-PostgreSQL 18 • SQL (JOINs, CTEs, Window Functions, LAG, CASE WHEN) • Power BI • Excel
+PostgreSQL 18 • SQL (JOINs, CTEs, Window Functions, LAG, CASE WHEN) • Power BI
 
 ---
 
@@ -80,10 +80,10 @@ FROM (
     FROM (
         SELECT
             DATE_TRUNC('MONTH', o.order_purchase_timestamp) AS month,
-            SUM(oi.price + oi.freight_value) AS total_revenue
+            SUM(o1.price + o1.freight_value) AS total_revenue
         FROM orders o
-        JOIN order_items oi
-            ON o.order_id = oi.order_id
+        JOIN order_items o1
+            ON o.order_id = o1.order_id
         WHERE o.order_status = 'delivered'
         GROUP BY DATE_TRUNC('MONTH', o.order_purchase_timestamp)
     ) t
